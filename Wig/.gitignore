@@ -1,0 +1,59 @@
+# CMake
+cmake-build-debug/
+cmake-build-debug/CMakeFiles
+cmake-build-debug/CMakeCache.txt
+cmake-build-debug/Makefile
+cmake-build-debug/untitled
+cmake-build-debug/untitled.cbp
+cmake-build-debug/cmake_install.cmake
+out/
+
+# IDE - VSCode
+.vscode/
+
+# IDE - CLion
+.idea/
+
+# IDE - Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcproj
+*.vcproj.*
+.vs/
+*.vspscc
+*.suo
+
+# CM# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
