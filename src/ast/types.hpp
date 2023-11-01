@@ -9,7 +9,8 @@
 /*
 * Type: PrimitiveType (PointerType | ArrayType | FunctionType | TupleType)*; 
 */
-struct Type {
+struct Type
+{
 	PrimitiveType primitive_type;
 	std::vector<PointerType> pointer_types;
 	std::vector<ArrayType> array_types;
@@ -18,7 +19,8 @@ struct Type {
 };
 
 
-enum {
+enum
+{
 	TYPE_VOID(TOKEN_VOID),
 	TYPE_BOOL(TOKEN_BOOL),
 	TYPE_CHAR(TOKEN_CHAR),
@@ -32,7 +34,8 @@ enum {
 * 
 * '[' PrimitveType ']' | '[' Identifier ']'
 */
-struct ArrayType {
+struct ArrayType
+{
 	TokenKind lbracket;
 	PrimitiveType primitive_type;
 	TokenKind rbracket;
@@ -43,7 +46,8 @@ struct ArrayType {
 * 
 * Star (TOKEN_STAR)
 */
-struct PointerType {
+struct PointerType
+{
 	TokenKind star;
 };
 
@@ -52,7 +56,8 @@ struct PointerType {
 * '(' ( Type (',' Type)* )? ')'
 *
 */
-struct FunctionType {
+struct FunctionType
+{
 	TokenKind lparen;
 	std::optional<std::vector<Type>> arguments;
 	TokenKind rparen;
