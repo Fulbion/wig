@@ -3,6 +3,7 @@
 
 enum TokenKind {
 	// Keywords
+	TOKEN_BOOL, // bool
 	TOKEN_BREAK, // break
 	TOKEN_CASE, // case
 	TOKEN_CHAR, // char
