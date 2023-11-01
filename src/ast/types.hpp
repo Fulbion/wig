@@ -19,14 +19,14 @@ struct Type
 };
 
 
-enum
+enum PrimitiveType(TokenKind)
 {
 	TYPE_VOID(TOKEN_VOID),
 	TYPE_BOOL(TOKEN_BOOL),
 	TYPE_CHAR(TOKEN_CHAR),
 	TYPE_INT(TOKEN_INT),
 	TYPE_FLOAT(TOKEN_FLOAT),
-} PrimitiveType(TokenKind);
+};
 
 
 /*
